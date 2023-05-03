@@ -1,0 +1,63 @@
+site_name: JAWS
+theme: 
+    name: material
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+nav:
+  - Local Environment setup:
+    - Tools setup : environment/tools.md
+    - AWS profiles setup: environment/aws.md
+    - FAQ : support/index.md
+  - Vanilla - jAWS original app:
+    - Running locally: vanilla/localstack/README.md
+    - Recap: vanilla/recap/README.md
+  - Create user:
+    - Introduction: iam/index.md
+    - Create User: iam/create.md
+    - MFA: iam/mfa.md
+    - Recap: iam/recap/README.md
+  - Budget setup:
+    - Introduction: budget/index.md
+    - Prerequisites: budget/prerequisites.md
+    - Budget: budget/budget.md
+    - Recap: budget/recap/README.md
+  - Rehost - jAWS Spring Boot with PostgreSQL:
+    - Introduction: postgreSQL/index.md
+    - Running locally: postgreSQL/localstack/README.md
+    - PostgreSQL: postgreSQL/postgresql/README.md
+    - S3: postgreSQL/s3/README.md
+    - Secrets Manager: postgreSQL/part_secrets_manager/README.md
+    - Elastic Beanstalk: postgreSQL/beanstalk/README.md
+    - CloudFront: postgreSQL/cloudfront/README.md
+    - Logs analysis using CloudWatch: postgreSQL/cloud_watch/README.md
+    - Recap: postgreSQL/recap/README.md
+    - Cleanup: postgreSQL/cleanup/README.md
+  - Refactor - jAWS Spring Boot with DynamoDB:
+      - Introduction: dynamoDB/index.md
+      - Running locally: dynamoDB/localstack/README.md
+      - DynamoDB: dynamoDB/dynamodb/README.md
+      - S3: dynamoDB/s3/README.md
+      - Elastic Beanstalk: dynamoDB/beanstalk/README.md
+      - CloudFront: dynamoDB/cloudfront/README.md
+      - Schedule-based autoscaling: dynamoDB/asg/README.md
+      - Logs analysis using CloudWatch: dynamoDB/cloud_watch/README.md
+      - Recap: dynamoDB/recap/README.md
+      - Cleanup: dynamoDB/cleanup/README.md
+  - Rebuild - jAWS Lambda with DynamoDB:
+      - Introduction: lambda/index.md
+      #- Running locally: lambda/localstack/README.md
+      - IAM Access Key Setup: lambda/iam/README.md
+      - SAM: lambda/sam/README.md
+      - Logs analysis using CloudWatch: lambda/cloud_watch/README.md
+      - Recap: lambda/recap/README.md
+      - Cleanup: lambda/cleanup/README.md
+  - Build pipeline using Code Pipeline: 
+      - Introduction: codePipeline/index.md
+      - Prerequisites: codePipeline/prerequisites/prerequisites.md
+      - Code Build: codePipeline/codebuild/codeBuild.md
+      - Code Pipeline: codePipeline/codepipeline/codePipeline.md
+      - Recap: codePipeline/recap/README.md
+      - Cleanup: codePipeline/cleanup/README.md
+

@@ -1,0 +1,22 @@
+language: python # Set the build language to Python
+
+python: 3.8 # Set the version of Python to use
+
+branches: documentation # Set the branch to build from
+
+install:
+    - pip install mkdocs-material pymdown-extensions pygments # Install the required dependencies
+
+script: true # Skip script (Don't use this if one already exists)
+
+before_deploy:
+    - mkdocs build --verbose --clean # Build a local version of the docs 
+
+deploy: # Deploy documentation to Github in the gh_pages branch
+    provider: pages
+    skip-cleanup: true
+    github_url: github.ibm.com
+    github-token: $github_token
+    local_dir: site
+    on:
+        branch: documentation
