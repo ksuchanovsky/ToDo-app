@@ -46,20 +46,20 @@ Create Environment
 25. Choose refresh icon, next to the **EC2 instance profile** dropdown list.
 	This refreshes the dropdown list, so that the Role you just created will display in the dropdown list.
 	
-	![Screenshot](../../img/beastalk_configure_service_access.PNG)
+	![Screenshot](../../img/beastalk_configure_service_access.png)
 
 26. The default settings remain in  **Set up networking, database, and tags** step.
 27. Step **Configure instance traffic and scaling**.
 28. In Section **Capacity** set Environment type to **Load balanced**.
 29. Set Maximum for instances to 2.
 
-	![Screenshot](../../img/beanstalk_capacity.PNG)
+	![Screenshot](../../img/beanstalk_capacity.png)
 
 30. Set Instance types: **t2.micro**.
 31. Set Availability Zones: **Any 1**.
 32. Set Placement: **eu-central-1**.
 
-	![Screenshot](../../img/beanstalk_instance_types.PNG)
+	![Screenshot](../../img/beanstalk_instance_types.png)
 	
 33. In section **Load Balancer Type** choose load balancer type **Application Load Balancer**.
 34. In part Processes change this values:
@@ -72,7 +72,7 @@ Create Environment
 36. Step **Configure updates, monitoring, and logging**.
 37. In Section **Health reporting** set System to **Basic**.
 
-	![Screenshot](../../img/beanstalk_health2.PNG)	
+	![Screenshot](../../img/beanstalk_health2.png)	
 
 38. In Section **Rolling updates and deployments** set Deployment policy to **All at once**.
 39. Set **Ignore health check** to **True**
