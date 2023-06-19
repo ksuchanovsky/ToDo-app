@@ -12,7 +12,7 @@ Root account is not recommend to perform everyday tasks.
 
 - Click on Next, then we have to assign user to existing group (create or attach already existing in was), we will create own group
 
-- Fill group name (e.g. Developers) and attach permission to group - e.g. - AmazonEC2FullAccess, AmazonS3FullAccess, IAMFullAccess, AWSLambda_FullAccess, AmazonSQSFullAccess
+- Fill group name (e.g. Developers) and attach permission to group - e.g. - AdministratorAccess
 
 - In next page there we can set tags to our new user. It is optional, sorting in logs can be easier via tags.
 
