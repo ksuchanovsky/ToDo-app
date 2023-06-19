@@ -14,20 +14,23 @@ CloudFront will provide us policy statement for bucket policy after creating the
 7. In section Cache key and origin requests use recommended cache policy and disable caching and set
 	Origin request policy to **CORS-S3Origin**.		
 ![Screenshot](../../img/cache_key.png)		
-8. Default root object set to **index.html**.
-9. Create distribution.
-10. After distribution is created pop up window offer us new bucket policy. Copy it and replace existing policy in our S3 bucket.
+8. Turn off **Web Application Firewall (WAF)**.
+![Screenshot](../../img/cloud_front_waf.png)	
+9. Default root object set to **index.html**.
+10. Create distribution.
+111. After distribution is created pop up window offer us new bucket policy. Copy it and replace existing policy in our S3 bucket.
 ![Screenshot](../../img/pop.png)	
-11. In Origins section create origin.
-12. Set origin domain for application load balancer - find ELB.
-13. Create origin.
-14. In Behaviours section create behaviour.
-15. Set Path pattern to **/api/***
-16. Set Origin and origin groups to ELB.
-17. For Allowed HTTP methods choose **GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE**.
-18. In section **Cache key and origin requests** use recommended cache policy and disable caching and set 
+12. In Origins section create origin.
+13. Set origin domain for application load balancer - find ELB.
+![Screenshot](../../img/cloudfront_origin2.png)	
+14. Create origin.
+15. In Behaviours section create behaviour.
+16. Set Path pattern to **/api/***
+17. Set Origin and origin groups to ELB.
+18. For Allowed HTTP methods choose **GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE**.
+19. In section **Cache key and origin requests** use recommended cache policy and disable caching and set 
 	Origin request policy to AllViewer.
 ![Screenshot](../../img/cache_key_2.png)
-19. After behaviour is created distribution is redeployed. After succesfull deployment open website with distribution domain name.
+20. After behaviour is created distribution is redeployed. After succesfull deployment open website with distribution domain name.
  (General section)
  

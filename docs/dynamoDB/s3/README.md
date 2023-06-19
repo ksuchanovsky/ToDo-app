@@ -19,8 +19,7 @@ Build and upload project
 -------------------------
 
 1. Build application with command *ng build --configuration production* and the resulting built 
-is placed under */dist/&#60;app name&#62;*. **An alternative is to use the already created client files 
-that are in the slack channel jaws-help**.
+is placed under */dist/&#60;app name&#62;*.
 
 2. Select S3 bucket and upload those static files into the bucket.
 
