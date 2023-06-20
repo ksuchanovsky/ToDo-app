@@ -1,5 +1,10 @@
 # Logs analysis using CloudWatch
 
+High-level view
+-------------------------
+![Screenshot](../../img/postgreSQL_diagram.png)
+
+
 Display the application logfiles using CloudWatch
 -------------------------
 - Go to Amazon CloudWatch service

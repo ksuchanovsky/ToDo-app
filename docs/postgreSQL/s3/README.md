@@ -1,5 +1,10 @@
 # S3
 
+High-level view
+-------------------------
+![Screenshot](../../img/postgreSQL_diagram_step_3_s3-Page-1.drawio.svg)
+
+
 Create bucket
 -------------------------
 

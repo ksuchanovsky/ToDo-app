@@ -1,5 +1,8 @@
 # Elastic Beanstalk
 
+High-level view
+-------------------------
+![Screenshot](../../img/postgreSQL_diagram_step_5_beanstalk-Page-1.drawio.svg)
 
 Create Environment
 -------------------------

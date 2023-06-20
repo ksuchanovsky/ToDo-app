@@ -1,5 +1,9 @@
 # CloudFront
 
+High-level view
+-------------------------
+![Screenshot](../../img/postgreSQL_diagram_step_6_cloudfront-Page-1.drawio.svg)
+
 Create CloudFront 
 -------------------------
 

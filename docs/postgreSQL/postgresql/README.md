@@ -1,5 +1,9 @@
 # RDS PostgreSQL
 
+High-level view
+-------------------------
+![Screenshot](../../img/postgreSQL_diagram_step_2_postgresql-Page-1.drawio.svg)
+
 Creating a PostgreSQL DB instance
 -------------------------
 

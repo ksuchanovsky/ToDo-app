@@ -1,5 +1,10 @@
 # Secrets Manager
 
+High-level view
+-------------------------
+![Screenshot](../../img/postgreSQL_diagram_step_4_secret_manager-Page-1.drawio.svg)
+
+
 Storage of the Postgres password in AWS Secrets Manager
 ----
 
