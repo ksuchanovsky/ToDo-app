@@ -8,4 +8,12 @@ services:
       - POSTGRES_PASSWORD=123
       - POSTGRES_DB=jawstutorial
     ports:
-      - 5432:5432
+      - "5432:5432"
+  pgadmin4:
+    image: "dpage/pgadmin4"
+    depends_on: [postgres]
+    ports:
+      - "8082:80"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=john.doe@example.com
+      - PGADMIN_DEFAULT_PASSWORD=secret
