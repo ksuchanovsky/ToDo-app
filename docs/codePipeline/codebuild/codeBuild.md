@@ -24,12 +24,18 @@ Otherwise, on the navigation pane, expand Build, choose Build projects, and then
 5. In **Source**:
 
 	  **Source provider**
-      Choose **GitHub Enterprise**. Follow the instructions to connect (or reconnect) with GitHub and then choose Authorize.
+      Choose **GitHub**. In Repository choose **Connect with a GitHub personal access token**.
+	  
+	  ![Screenshot](../../img/1_primary_source.png)
 
 	  For **Personal Access Token**, paste the token you copied to your clipboard and choose Save Token.
 
 	  **Repository URL**
-	  In Repository URL, enter the URL for your GitHub Enterprise repository.
+	  In Repository URL, enter the URL for your GitHub repository.
+	  
+	  ![Screenshot](../../img/2_primary_source.png)
+	  
+	  In **Source version** set branch for **refactor_dynamodb**.
 
 6. In **Primary source webhook events**, select the following.
 
@@ -59,23 +65,15 @@ Otherwise, on the navigation pane, expand Build, choose Build projects, and then
 	
 	![Screenshot](../../img/codePipeline_5.PNG)
 
-8. Choose Create build project.
-9. Create webhook dialog box is displayed with values for Payload URL and Secret.
+8. Choose **Create build project**.
+9. In Github settings in part **Webhooks** you should see new webhook.
 
-	!!! note
-		The Create webhook dialog box appears only once. 
-		Copy the payload URL and secret key. You need them when you add a webhook in GitHub Enterprise Server
+	![Screenshot](../../img/webhook_build_project.png)
 
-10. In GitHub Enterprise Server, choose the repository where your CodeBuild project is stored.
-11. Choose Settings, choose Hooks & services, and then choose Add webhook.
-12. Enter the payload URL and secret key, accept the defaults for the other fields, and then choose Add webhook.
+10. Return to your CodeBuild project and start build.
+11. In tab Phase details and Build logs you can see details for running build. 
 
-	![Screenshot](../../img/codePipeline_6.PNG)
-
-13. Return to your CodeBuild project. Close the Create webhook dialog box and choose Start build.
-14. In tab Phase details and Build logs you can see details for running build. 
-
-![Screenshot](../../img/codePipeline_7.PNG)
+	![Screenshot](../../img/codePipeline_7.PNG)
 
 Build project for client part
 -------------------------

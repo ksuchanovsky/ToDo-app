@@ -39,6 +39,8 @@ Create Environment
 		
 		SecretsManagerReadWrite
 		
+		CloudWatchFullAccess
+		
 21. Choose **Next** and Enter a name for the role.
 22. Choose **Create role**.
 23. Return to the Elastic Beanstalk console window that is open.
@@ -51,9 +53,9 @@ Create Environment
 26. The default settings remain in  **Set up networking, database, and tags** step.
 27. Step **Configure instance traffic and scaling**.
 28. In Section **Capacity** set Environment type to **Load balanced**.
-29. Set Maximum for instances to 2.
+29. Set Minimum number of instances to 2 and maximum for instances to 3.
 
-	![Screenshot](../../img/beanstalk_capacity.png)
+	![Screenshot](../../img/capacity_new.png)
 
 30. Set Instance types: **t2.micro**.
 31. Set Availability Zones: **Any 1**.
@@ -85,14 +87,6 @@ Create Environment
 		![Screenshot](../../img/17_Env_var.PNG)		
 
 42. Check Review page and submit.
-43. If you're using AWS Academy account
-
-!!! warning
-	Scroll down to the Security panel and choose Edit:
-	- Service role, choose: **LabRole**
-	- For EC2 key pair, choose: **vockey**
-	- For IAM instance profile choose: **LabInstanceProfile**
-	Supported Instance types: nano, micro, small, medium, and large. If you attempt to launch a larger instance type, it will be terminated.
 
 
 !!! note

@@ -7,7 +7,7 @@ Copy it to your clipboard so that it can be used when you create your CodeBuild 
 - In GitHub open settings -> Developer settings -> Personal Access tokens
 - Click on Generate new token 
 
-![Screenshot](../../img/codePipeline_1.PNG)
+![Screenshot](../../img/personal_token.png)
 
 
 - When you create the personal access token, include the repo scope in the definition. 
