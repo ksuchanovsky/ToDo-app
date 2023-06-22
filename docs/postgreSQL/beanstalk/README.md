@@ -77,7 +77,7 @@ Create Environment
 	![Screenshot](../../img/beanstalk_health2.png)	
 
 38. In Section **Rolling updates and deployments** set Deployment policy to **All at once**.
-39. Set **Ignore health check** to **True**
+39. Set **Ignore health check** to **False**
 40. Enable streaming of the logs to Cloudwatch, by setting the checkbox 
 	(We will need this for later analysis in in part [Logs analysis using CloudWatch](../part6/#build-client)):
 	
