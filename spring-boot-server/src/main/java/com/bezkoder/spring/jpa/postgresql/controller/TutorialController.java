@@ -33,7 +33,7 @@ public class TutorialController {
 	public ResponseEntity<List<Tutorial>> getAllTutorials(@RequestParam(required = false) String title) {
 		try {
 			List<Tutorial> tutorials = new ArrayList<Tutorial>();
-			//build triger
+			
 			if (title == null)
 				tutorialRepository.findAll().forEach(tutorials::add);
 			else
